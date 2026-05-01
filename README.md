@@ -4,18 +4,18 @@ Saudi Arabia's Nitaqat system requires private-sector employers to meet sector-s
 
 This project models 18 fictional companies across the Eastern Province (Dammam, Khobar, Dhahran, Jubail) over 12 months of 2023 and uses SQL to answer the kinds of questions an HR analytics or workforce planning team would actually need answered.
 
-## Why This Project Matters
+## Why I Built This
 
-This is the main SQL project in my portfolio. I built it to show that I can use SQL for a realistic policy/business question: which companies are compliant, which are at risk, and how many Saudi hires would be needed to move into a safer Nitaqat band.
+This is the main SQL project in my portfolio. I wanted something closer to the kind of workforce or HR reporting question a company in Saudi Arabia might actually care about: who is compliant, who is falling behind, and how many Saudi hires would close the gap.
 
-For entry-level data analyst and reporting analyst roles, this project demonstrates:
+The SQL work here includes:
 
 - Relational database design with sector, company, and monthly snapshot tables
 - SQL joins across normalized tables
 - Aggregations by city, sector, company, and compliance status
 - CTEs for reusable query logic
 - Window functions for month-over-month trend analysis
-- Business interpretation of query results, not just raw outputs
+- Writing up the results in plain business language, not just showing query output
 
 ---
 
@@ -61,7 +61,7 @@ python setup_database.py
 
 ## SQL Analysis Sections
 
-The SQL file is organized into five sections:
+The SQL file is split into five parts:
 
 1. **Basic workforce counts**: total headcount, Saudi headcount, expat headcount, and city totals.
 2. **Saudization rates and band classification**: Nitaqat band by company and sector benchmarks.
