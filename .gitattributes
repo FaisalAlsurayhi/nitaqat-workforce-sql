@@ -1,0 +1,3 @@
+# Treat the database setup script as supporting code so GitHub's language
+# summary better reflects the main SQL analysis work.
+setup_database.py linguist-generated=true

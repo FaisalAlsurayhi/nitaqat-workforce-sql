@@ -23,8 +23,8 @@ The SQL work here includes:
 
 | File | Description |
 |------|-------------|
-| `setup_database.py` | Builds `nitaqat_workforce.db` — generates schema and populates all tables |
-| `analysis_queries.sql` | 16 analytical queries across 5 sections |
+| `analysis_queries.sql` | Main analysis file with 16 SQL queries across 5 sections |
+| `setup_database.py` | Small helper script that creates the sample SQLite database |
 | `nitaqat_workforce.db` | SQLite database (auto-generated, not tracked in git) |
 
 ---
@@ -50,7 +50,8 @@ high_green_threshold                           saudi_pct (computed)
 ## Setup
 
 ```bash
-# Requires Python 3.x — no external libraries needed
+# Optional: run this once to create the sample SQLite database
+# Requires Python 3.x, no external libraries needed
 python setup_database.py
 
 # Open nitaqat_workforce.db in DB Browser for SQLite
@@ -161,4 +162,6 @@ All company names, headcount figures, and Saudization rates are **fictional and 
 
 ## Tools
 
-`SQL` · `SQLite` · `Python 3` · `DB Browser for SQLite`
+Main analysis: `SQL` · `SQLite` · `DB Browser for SQLite`
+
+Supporting script: `Python 3` is only used to generate the sample database.
